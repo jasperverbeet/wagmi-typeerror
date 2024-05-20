@@ -4,7 +4,7 @@ import { useConfig } from 'wagmi';
 import { readContractQueryOptions } from 'wagmi/query';
 
 
-const useOtcSummary = () => {
+const useTypeError = () => {
   const config = useConfig();
 
   const options = readContractQueryOptions(config, {
@@ -16,4 +16,4 @@ const useOtcSummary = () => {
   return useSuspenseQuery(options);
 };
 
-export default useOtcSummary;
+export default useTypeError;
